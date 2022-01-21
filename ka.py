@@ -1,1 +1,1 @@
-print("main uchun")
+print("main uchunda")
