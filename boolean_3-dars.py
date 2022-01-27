@@ -1,10 +1,13 @@
 #  1-misol.
-A = 12;         print(bool(A))
+A = 12;         print(A>=0)
+#  2-misol.
+print("A toq:", A%2 != 0)
+#  3-misol.
+print("A juft:", A%2 == 0)
 #  4-misol.
-A=6; B=3;       print(A>2, B<=3)
+A=6; B=3;       print(A>2 and B<=3)
 #  5-misol.
-A=6; B=3;       print(A>=0, B<2)
-
+A=6; B=3;       print(A>=0 or B<-2)
 #  6-misol.
 A=6; B=8; C=8;       print(A<=B<=C)
 
@@ -40,7 +43,7 @@ x1 = (-B*B - pow(D, 1/2)) / (2*A);      x2 = (-B*B + pow(D, 1/2)) / (2*A)
 print(x1, x2)
 
 #  25-misol.
-x, y = 4, 5;
+x, y = 4, 5
 print("Birinchi chorak:", x > 0 and y > 0);         print("Ikkinchi chorak:", x < 0 and y > 0)
 print("Uchinchi chorak:", x < 0 and y < 0);         print("Ikkinchi chorak:", x > 0 and y < 0)
 
