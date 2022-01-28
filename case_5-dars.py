@@ -39,14 +39,11 @@ elif kun == 29 and oy==2:
     kun, oy = 1, oy + 1
 print(kun, "-", oy)
 
-#  10-misol.            Robot
+#  10-misol.            Robot          <  komandasi kop  >
 #y = input("robot yo'nalishi (Janub-Shimol-Sharq-G'arb) >:")
 #k = int(input("Komanda (0-oldings, 1-chapga, 2-o'ngnga) >:"))
 ###########################################################               ????????????????????????????????
 
-
-#  11-misol.
-#################                                                      /????????????????????????????????
 
 #  15-misol.                        K a r t a
 M = 3 #int(input("1-g'ish, 2-olma, 3-chillak, 4-qarg'a.  >>> Birini tanlang:"))
@@ -66,7 +63,7 @@ else:                   print("bunday karta yuq")
 
 
 #  18-misol.         Sonni so'z ko'rinishiga keltiruvchi dastur
-son = 555   #int(input(">> 10000 dan kichik Son kiriting.\n> So'z qilib beraman:"))
+son = 5555   #int(input(">> 10000 dan kichik Son kiriting.\n> So'z qilib beraman:"))
 
 if son // 1000 != 0:                              # mingliklar
     if son // 1000 == 1:
@@ -151,7 +148,7 @@ if (son % 10) != 0:                           # birliklar
 elif son == 0:
     print("nol")
 
-#  19-misol.                        M u ch a l ni  aniqlash
+#  19-misol.                        M u ch a l ni   aniqlash
 yil = 2008  # int(intput("Yilni kiriting:"))
 print((yil-1984)//12, "--" ,(yil-1984)%12)
 if ((yil-1984)//12) == 0:           print("Yashil", end=" ")
@@ -173,7 +170,31 @@ elif ((yil-1984)%12) == 9:            print("Tovuq")
 elif ((yil-1984)%12) == 10:            print("It")
 elif ((yil-1984)%12) == 11:            print("To'ng'iz")
 
-#  20-misol.                    B u r j ni  aniqlash
-
-
-
+#  20-misol.                    B u r j ni    aniqlash
+D, M = 5, 3     # int(input("Kun:")), int(input("Oy:"))
+if (D>=20 and D<=31 and M==1) or (M==2 and D>=1 and D<=18):
+    print("Qovg'a")
+elif (M==2 and D>=19 and D<=28) or (M==3 and D>=1 and D<=20):
+    print("Baliq")
+elif (M==3 and D>=21 and D<=31) or (M==4 and D>=1 and D<=19):
+    print("Qo'y")
+elif (M==4 and D>=20 and D<=31) or (M==5 and D>=1 and D<=20):
+    print("Buzoq")
+elif (M==5 and D>=21 and D<=31) or (M==6 and D>=1 and D<=21):
+    print("Egizaklar")
+elif (M==6 and D>=22 and D<=31) or (M==7 and D>=1 and D<=22):
+    print("Qisqichbaqa")
+elif (M==7 and D>=23 and D<=31) or (M==8 and D>=1 and D<=22):
+    print("Arslon")
+elif (M==8 and D>=23 and D<=31) or (M==9 and D>=1 and D<=22):
+    print("Parizod")
+elif (M==9 and D>=23 and D<=31) or (M==10 and D>=1 and D<=22):
+    print("Tarozi")
+elif (M==10 and D>=23 and D<=31) or (M==11 and D>=1 and D<=22):
+    print("Chayon")
+elif (M==11 and D>=23 and D<=31) or (M==12 and D>=1 and D<=21):
+    print("O'qotar")
+elif (M==12 and D>=22 and D<=31) or (M==1 and D>=1 and D<=19):
+    print("Echki")
+else:
+    print("Bunday kun yo'q")
