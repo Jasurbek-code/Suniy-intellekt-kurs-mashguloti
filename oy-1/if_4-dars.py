@@ -1,12 +1,25 @@
 import math
 #  1-misol.
+son = 21
+if son >= 0:
+    print("Son musbat:", son + 1)
+else:
+    print("Son manfiy:", son)
 
+#  2-misol.
+if son >= 0:
+    print("Son musbat:", son + 1)
+else:
+    print("Son manfiy:", son - 2)
 
-#  -misol.
-
-
-#  -misol.
-
+#  3-misol.
+if son == 0:
+    son = 10
+    print("Son nol:", son)
+if son > 0:
+    print("Son musbat:", son + 1)
+else:
+    print("Son manfiy:", son)
 
 #  4-misol.
 a,b,c = 2,-3,4;          S=0
@@ -27,6 +40,13 @@ a,b = 2,3;
 if a>b:    print("a > b")
 else:      print("a < b")
 
+#  7-misol.
+A, B = 5, 4
+if A > B:
+    print(B)
+else:
+    print(A)
+
 #  8-misol.
 a, b = 4,3
 if a>b:     print(a, b)
@@ -38,9 +58,18 @@ if a>b:     A,B = B,A;        print("B=", B, "  A=", A)
 else:                         print("B=", B, "  A=", A)
 
 #  10-misol.
-a, b = 5,6
+a, b = 7,5
 if a != b:          print("a + b =", a+b)
 else:               print("nol=", 0)
+
+#  11-misol.
+a, b = 7,5
+if a == b:
+    print("Teng ekan:", 0)
+if a>b:
+    print("Kattasi  a:", a)
+else:
+    print("Kattasi  b:", b)
 
 #  12-misol.
 a,b,c = 6,1,4
@@ -54,14 +83,46 @@ if a < b < c or a > b > c:      print("b o'rtacha")
 elif b < a < c or b > a > c:    print("a o'rtacha")
 else:                           print("c o'rtacha")
 
+#  14-misol.
+m,k,l = 2,3,4
+if m < k < l:
+    print("m=", m, "l=", l)
+if m < l < k:
+    print("m=", m, "k=", k)
+if k < m < l:
+    print("k=", k, "l=", l)
+if k < l < m:
+    print("k=", k, "m=", m)
+if l < k < m:
+    print("l=", l, "m=", m)
+if l < m < k:
+    print("l=", l, "k=", k)
+
 #  15-misol.
 a,b,c = 2,8,4
 if a+b > b+c or a+b > a+c:          print("a", a, " b", b)
 elif a+c > a+b or a+c > b+c:        print("a", a, " c", c)
 elif b+c > a+b or b+c > a+c:         print("b", b, " c", c)
 
+#  16-misol.
+a,b,c = 2,3,4
+if a < b < c:
+    print("O'sish tartibida:", "a=", a*2, "b=", b*2, "c=", c*2)
+if a > b > c:
+    print("O'sish tartibida:", "a=", -a, "b=", -b, "c=", -c)
+
+
 #  19-misol.
-# keremas                                      ????????????????????????????????????????????????????????????????????/
+a,b,c,d = 2,2,2,5
+if a == b ==c:
+    print("d=", d)
+elif a == b == d:
+    print("c=", c)
+elif a == c == d:
+    print("b=", b)
+elif b == c == d:
+    print("a=", a)
+
 #  20-misol.
 a,b,c = 2,3,4
 if (b-a) < (c-a):
@@ -73,8 +134,10 @@ elif (c-a) < (b-a):
 
 #  24-misol.
 x = 5
-if x>0:         fx = 2*math.sin(x);     print("f(x) = 2*sin(x)", fx)
-else:           fx = x - 6;             print("f(x) = x - 6", fx)
+if x>0:
+    fx = 2*math.sin(x);        print("f(x) = 2*sin(x)", fx)
+else:
+    fx = x - 6;                print("f(x) = x - 6", fx)
 
 #  26-misol.
 x = 6
@@ -92,6 +155,17 @@ if x < 0:                               print("f(x) = -1")
 a = 1999
 if a % 4 == 0:      print("kabisa", 365)
 if a // 400:        print("kabisa emas")
+
+#  29-misol.
+K = 15
+if K >= 0 and K % 2 != 0:
+    print("Musbat toq son.", K)
+elif K >= 0 and K % 2 == 0:
+    print("Musbat Juft son.", K)
+elif K < 0 and K % 2 != 0:
+    print("Manfiy toq son.", K)
+elif K < 0 and K % 2 == 0:
+    print("Manfiy juft son.", K)
 
 #  30-misol.
 a = 11587

@@ -152,16 +152,42 @@ while a >= b:
     a -= b
     print("bulinuvchi=", a, b)
 
-#  -misol.
+#  15-misol.            Kabisa yili yoki kabisa yili emasligini topish
+Yil = 2000
+if Yil%4 == 0:
+    print("Kabisa yili")
+if Yil%100 == 0 and Yil%400 != 0:
+    print("Kabisa yili emas")
 
 
-#  -misol.
 
 
-#  -misol.
+##############        7-8-mavzular        #################################
 
+####     if ni bir qatorda yozish usuli                   $$$$$$$$$$$$$$$$$
+U = int(input("Son="))
+U =U + 1 if U > 0 else 1 if U==0 else U-4
+print("U=", U)
 
-#  -misol.
+#       $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $
+
+#  1-misol.             Devor tirqishiga g'isht sig'ishini yopish
+x, y = 10, 15    # devor teshigi o'lchamlari
+a,b,c = 2,3,4
+if (x//a and y//b) or (x//b and y//a):
+    print()
+
+#  2-misol.
+N = 123456789            # raqamni teskari tartibda chiqarish
+s, Y = 1, 0
+while s <= N:
+    a = N//s%10
+    print(a, end="")
+    s *= 10
+    Y += a
+print("\nYig'indisi=", Y)
+
+# 3-misol.
 
 
 

@@ -6,7 +6,7 @@ a,b,c,d = int(input("a=")), int(input("b=")), int(input("c=")), int(input("d="))
 a = a + b + c + d
 b = a - b- c - d
 c = a - b- c - d
-d = a - b- c - d
+d = a - b- c - d + m
 a = a - b- c - d
 
 print("a=", a, "b=", b, "c=", c, "d=", d)
