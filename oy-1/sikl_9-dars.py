@@ -204,7 +204,7 @@ while son > 0:
     if son%10 == 2:
         s += 1
     son //= 10
-print("ikki raqami ", s, "ta.  1)sikl soni:", k)
+print("ikki raqami ", s, "ta.  2)sikl soni:", k)
 
 #  21-misol.                toq raqam nechtaligi
 son = 5936541
