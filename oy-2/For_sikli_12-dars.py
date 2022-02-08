@@ -82,7 +82,7 @@ for i in range(1, n+1):
     S *= s
 print("N ta kopaytuvchi=", S)
 
-#  13-misol.
+#  13-misol.                        !!!!!!
 n = 2
 S, k = 0, 0
 for i in range(1, n+1):
@@ -176,8 +176,8 @@ for i in range(3 ,n+1, 2):
     f *= i*(i-1)
     S += (ishora) * (x**(i))/f
     ishora *= -1
-    print("1)  S=", S)
 print("< sin(x) >  S=", S)
+
 
 #  24-misol.           cos(x) ga yaqinlashadi
 n = 4; x = 3
@@ -189,6 +189,12 @@ for i in range(2 ,n+1, 2):
     ishora *= -1
 print("< cos(x)>  S=", S)
 
+
+
+
+
+
+
 #  25-misol.
 n, x = 4, 0.2           # |x| < 1
 S = 0
@@ -198,9 +204,10 @@ print("Yig'indi=", S)
 
 #  26-misol.
 n, x = 4, 0.2           # |x| < 1
-S = 0
-for i in range(1, n+1):
-    S += ((-1)**(i-1))*(x**i)/i
+S = 0;   ishora = 1
+for i in range(1, n+1, 2):
+    S += (ishora)*(x**i)/i
+    ishora *= -1
 print("Yig'indi=", S)
 
 #  27-misol.            # |x| < 1                   #??????????????????????????????????????????????????????
@@ -237,27 +244,23 @@ for i in range(n):
 
 
 
-#  31-misol.                        # A0 = 2;   AK = 2 + 1/A(K-1);   K = 1,2,...:  dastlabki n ta hadi
+#  31-misol.                        # A0 = 2;   AK = 2 + 1/A(K-1);   K = 1,2,...:  dastlabki n ta hadi      !!!
 n = 2
 A0 = 2
-AK = 2         # AK - boshlang'ich qiymat
-
-for i in range(1, n+1):
+AK = A0         # AK - boshlang'ich qiymat
+for i in range(2, n+1):
     AK += 1 / i
 print("AK=", AK)
 
-
-
-
 #  32-misol.                        # A0 = 2;   ;   K = 1,2,...:  dastlabki n ta hadi          ?????????????????????????????
-n = 2
-A0 = 2;  AK = 2
-for i in range(n):
-    AK += 1 / A0
+n = 3
+AK = 0
+for i in range(1, n):
+    AK += (i + 1) / (i)
 print("AK=", AK)
 
 
-#  33-misol.                      # fibonachi
+#  33-misol.                      # fibonachi                   !!!
 n = 8
 f, f1 = 1, 0
 for i in range(1, n):
@@ -267,10 +270,21 @@ for i in range(1, n):
 print()
 
 
-#  34-misol.
+#  34-misol.        # A1=1; A2=2 ;  AK = (A(K-2)) + 2*A(K-1)) / 3 ;   K = 3,4,...:  dastlabki n ta hadi
+n = 4
+AK = 0
+for i in range(3, n+1):
+    AK += ((i-2) + 2*(i-1)) / 3
+print("AK=", AK)
+
+#  35-misol.    # A1=1; A2=2; A3=3;  AK = A(K-1) + A(K-2) - 2*A(K-3) ;   K = 4,5,...:  dastlabki n ta hadi
+n = 10
+AK = 0
+for i in range(4, n+1):
+    AK += (i-1) + (i-2) - 2*(i - 3)
+print("AK=", AK)
 
 
-#  35-misol.
 
 ###########################       ICHMA-ICH SIKLLAR       ##########################################################
 #  36-misol.
@@ -297,6 +311,7 @@ print("S=", S)
 print()
 
 #  39-misol.
+print(">>>>>>>>>>>    39-misol.     <<<<<<<<<<<<<<<")
 A, B = 3, 8
 for i in range(A, B+1):
     for j in range(i):
