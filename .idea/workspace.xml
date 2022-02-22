@@ -2,26 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121b2ace-d339-45ce-8b10-77b366ff571a" name="Changes" comment="uzgarish 5-si">
-      <change afterPath="$PROJECT_DIR$/../oy-1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Suniy_intellekt_kurs_misollari.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oy-1/sikl_10-11-dars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oy-1/sikl_9-dars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oy-2/For_sikli_12-dars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyektlar/zoom_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/oy-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/oy-1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoTlar/.idea/BoTlar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoTlar/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoTlar/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoTlar/bot_virus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoTlar/sms_send_bot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoTlar/virus_botlar/virus_bot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oy-2/funksiya_20-dars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oy-2/min-max_17-dars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oy-2/sanoq sistemasi kalkulyator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/begin_1-dars.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-1/begin_1-dars.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boolean_3-dars.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-1/boolean_3-dars.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_5-dars.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-1/case_5-dars.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/aralash_masalalar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/churnavek.py" beforeDir="false" afterPath="$PROJECT_DIR$/churnavek.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/if_4-dars.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-1/if_4-dars.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imtixon_30.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-1/imtixon_30.01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integers_2-dars.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-1/integers_2-dars.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sikl_6-dars.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-1/sikl_6-dars.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sikl_9-dars.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oy-2/For_sikli_12-dars.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-2/For_sikli_12-dars.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oy-2/for_optimal_yechimlar_13-dars.py" beforeDir="false" afterPath="$PROJECT_DIR$/oy-2/for_optimal_yechimlar_13-dars.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,57 +58,16 @@
     <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BoTlar.py" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Asus\Loyihalar\Pycharm\suniy_intellekt_kurs_misollari\1-oy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.For_sikli_12-dars">
-    <configuration name="For_sikli_12-dars" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="oy-1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Asus\Loyihalar\Pycharm\suniy_intellekt_kurs_misollari\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/oy-2" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oy-2/For_sikli_12-dars.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="For_sikli_12-dars" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="oy-1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Asus\Loyihalar\Pycharm\suniy_intellekt_kurs_misollari\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.churnavek">
     <configuration name="For_sikli_12-dars" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="oy-1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -219,7 +173,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sikl_10-11-dars" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="for_optimal_yechimlar_13-dars" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="oy-1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -227,11 +181,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Asus\Loyihalar\Pycharm\suniy_intellekt_kurs_misollari\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/oy-1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oy-1/sikl_10-11-dars.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oy-2/for_optimal_yechimlar_13-dars.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,19 +194,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sikl_10-11-dars" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Suniy_intellekt_kurs_misollari" />
+    <configuration name="for_optimal_yechimlar_13-dars" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oy-1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\Users\Asus\Loyihalar\Pycharm\suniy_intellekt_kurs_misollari\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sikl_10-11-dars.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,19 +215,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sikl_9-dars (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Suniy_intellekt_kurs_misollari" />
+    <configuration name="min-max_17-dars" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Asus\Loyihalar\Pycharm\suniy_intellekt_kurs_misollari\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/oy-2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oy-2/min-max_17-dars.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="virus_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BoTlar" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../BoTlar/virus_botlar" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sikl_9-dars.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../BoTlar/virus_botlar/virus_bot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -358,19 +333,21 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.For_sikli_12-dars" />
       <item itemvalue="Python.aa" />
       <item itemvalue="Python.begin_1-dars" />
+      <item itemvalue="Python.funksiya_20-dars" />
       <item itemvalue="Python.churnavek" />
-      <item itemvalue="Python.For_sikli_12-dars" />
-      <item itemvalue="Python.sikl_9-dars (1)" />
-      <item itemvalue="Python.sikl_10-11-dars" />
+      <item itemvalue="Python.for_optimal_yechimlar_13-dars" />
+      <item itemvalue="Python.min-max_17-dars" />
+      <item itemvalue="Python.virus_bot" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.For_sikli_12-dars" />
         <item itemvalue="Python.churnavek" />
-        <item itemvalue="Python.sikl_10-11-dars" />
-        <item itemvalue="Python.For_sikli_12-dars" />
+        <item itemvalue="Python.virus_bot" />
+        <item itemvalue="Python.for_optimal_yechimlar_13-dars" />
+        <item itemvalue="Python.min-max_17-dars" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +399,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -465,6 +442,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="uzgarish 5-si" />
     <option name="LAST_COMMIT_MESSAGE" value="uzgarish 5-si" />
   </component>

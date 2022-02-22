@@ -46,7 +46,7 @@ narx = 5000     # 1 kg konfet narxi
 for i in range(0, 10, 2):
     i = (i+10)/10 + 0.2
     S = float(format(i, ".1f")) * narx
-    print("%.1f narxi %s so'm" %(i, S))
+    print("%.1f narxi %s so'm" %(i, S))        # round(i, 1)    >> format urnida oson ixchamlash, butundan keyin 1 ta raqam chiqadi
 print()
 
 #  7-8-9-misol.                 a dan b gacha son yig'indisi
@@ -82,7 +82,7 @@ for i in range(1, n+1):
     S *= s
 print("N ta kopaytuvchi=", S)
 
-#  13-misol.                        !!!!!!
+#  13-misol.                                                                     !!!!!!
 n = 2
 S, k = 0, 0
 for i in range(1, n+1):
@@ -119,8 +119,8 @@ print("3 ^", i, "=", k)
 n = 5   #int(input("daraja:"))
 a = 3   #int(input("son="))
 S = 0
-for i in range(1, n+1):
-    S += pow(a, i)
+for i in range(0, n+1):
+    S += a**i
 print(a, "^", i, "=", S)
 
 #  18-misol.
@@ -131,7 +131,7 @@ for i in range(1, n+1):
     S += ((-1)**i)*pow(a, i)
 print(a, "^", i, "=", S)
 
-#  19-misol.                 ==================   fakytorial    ==================
+#  19-misol.                 ==================   faktorial    ==================
 n = 5
 f = 1
 for i in range(1, n+1):
@@ -159,6 +159,7 @@ print("bir taqsim faktorial. Yig'indisi=", S)
 
 
 
+
 #  22-misol.            1+x^1/1! + x^2/2! + x^3/3! + ... + x^n/n!  = e^x  ni hisoblash
 n = 4; x= 2
 f, S = 1, 0
@@ -172,12 +173,11 @@ print("Yig'indi=", S)
 n = 4; x = 3
 f, S = 1, x             # range 3 dan bolangani uchun S boshlang'ich qiymat x ni uziga teng bo'ladi
 ishora = -1
-for i in range(3 ,n+1, 2):
+for i in range(3, n+1, 2):
     f *= i*(i-1)
     S += (ishora) * (x**(i))/f
     ishora *= -1
 print("< sin(x) >  S=", S)
-
 
 #  24-misol.           cos(x) ga yaqinlashadi
 n = 4; x = 3
@@ -210,14 +210,22 @@ for i in range(1, n+1, 2):
     ishora *= -1
 print("Yig'indi=", S)
 
-#  27-misol.            # |x| < 1                   #??????????????????????????????????????????????????????
+#  27-misol.            # |x| < 1                   # !!!
+print("           27-misol.")
 n, x = 4, 0.2
-S = 0
+S = x
+for i in range(1, n+1):
+    S += S * (2*i-1) * (x**(2*i+1)) / ((2*i)*(2*i+1))           # S ko'paytirilgan bulishi mumkin
+    print("S=", S)
 
 
 
-#  28-misol.                                        #??????????????????????????????????????????????????????
-
+#  28-misol.                                        # !!!!
+n, x = 4, 0.2
+S = 1
+for i in range(1, n+1):
+    S += ((-1)**(i-1))*(2*i-3)*(x**i) / (2*i)
+    print("S=", S)
 
 #  29-misol.                    # [A, B], kesmani teng n taga bulib, shu nuqtalarini topish
 n, A, B = 5, 5, 17
@@ -305,26 +313,42 @@ print("S=", S)
 N = 3
 S = 0;  k = N
 for i in range(1, N+1):
-    S += i**k
+    S += i**k              # S += i**(N-i+1)            optimalrog'i
     k -= 1
 print("S=", S)
 print()
 
 #  39-misol.
 print(">>>>>>>>>>>    39-misol.     <<<<<<<<<<<<<<<")
-A, B = 3, 8
+A, B = 5, 8
 for i in range(A, B+1):
     for j in range(i):
         print("i=", i)
     print()
 
-#  40-misol.
-print(">>>>>>>>>>>    40-misol.     <<<<<<<<<<<<<<<")
-A, B = 3, 8
+#  40-misol.    1-usul
+print(">>>>>>>>>>>    40-misol. 1    <<<<<<<<<<<<<<<")
+A, B = 2, 8
 s = 0
-for i in range(A, B+1):
+for i in range(A, B+1):              # range(i-A + 1)  yozish mumkin
     s+= 1
     for j in range(s):
         print("i=", i)
     print()
 
+#  40-misol.    1-usul                                      str orqali optimal yechim
+print(">>>>>>>>>>>    40-misol. 2    <<<<<<<<<<<<<<<")
+A, B = 2, 8
+for i in range(A, B+1):
+    print((str(i) + " ")*(i-A+1), end=" ")
+
+print()
+#                           EKUB TOPISH
+print("EKUB  topish")
+a = 35; b = 90
+for i in range(max(a, b)):
+    b = b - a
+    a = b
+    if b < 0:
+        break
+    print("b=", b)
