@@ -154,7 +154,7 @@ if x < 0:                               print("f(x) = -1")
 #  28-misol.
 a = 1999
 if a % 4 == 0:      print("kabisa", 365)
-if a // 400:        print("kabisa emas")
+if a%400 != 0 and a%100 == 0:        print("kabisa emas")
 
 #  29-misol.
 K = 15
