@@ -91,11 +91,34 @@ def AddRightDigit(a, b, c,d):
 print(AddRightDigit(2,3,4,5))
 
 
-#  11-misol.                                                                   ??????????????????????????????????????
-print("\n~~~~~~~      11-misol.       ~~~~~~~~~~~~~~~~~~~")
-a,b,c,d = 2,5,3,8
+
+#  11-misol.   1                                                                !!!!!!!!!!!!!???
+print("\n~~~~~~~      11-misol.  1     ~~~~~~~~~~~~~~~~~~~")
 def MinMax(X, Y):
-    pass
+    if X > Y:
+        X, Y = Y, X
+    return X, Y
+
+mini = MinMax(4, 12)
+maxi = MinMax(8, 3)
+print(MinMax(5, 17))
+
+#  11-misol.    2                                                               !!!!!!!!!!!!!???
+print("\n~~~~~~~      11-misol.  2     ~~~~~~~~~~~~~~~~~~~")
+def MinMax(X, Y):
+    if X > Y:
+        return X
+    else:
+        return Y
+
+n = int(input("n= "))           # sikl ishlash davri
+c = int(input("X = "))
+for i in range(2, n+1):
+    X = int(input("X= "))
+    c = MinMax(c, X)
+print(c)
+
+
 
 
 #  12-misol.                        # sonlarni tartiblash
@@ -195,9 +218,10 @@ def DoiraYuzi(R):
 print(DoiraYuzi(6))
 
 
-#  19-misol.                                                        ?????????????????????????????????????????????????????
+#  19-misol.           markazi 1 nuqtada bo'lgan R1 va R2 radiusga ega 2 ta aylananing ustma-ust tushmaydigan qismi yuzini    ?????????????????????????????????????????????????????
 print("\n~~~~~~~      19-misol.       ~~~~~~~~~~~~~~~~~~~")
-
+def RingS():
+    pass
 
 
 #  20-misol.
@@ -278,8 +302,24 @@ print(Square(18))
 
 
 
-#  26-misol.
-print("\n~~~~~~~      26-misol.       ~~~~~~~~~~~~~~~~~~~")                 # 5 ni darasimi yo'qmi      ??????????????????????
+#  26-misol.     2                                                      # 5 ni darasimi yo'qmi
+print("\n~~~~~~~      26-misol. 2      ~~~~~~~~~~~~~~~~~~~")                              #    !!!!!!!!!!????
+def isPower(a):
+    k=1; i=1
+    while a > k:
+        k = 5**i
+        i += 1
+    if a == k:
+        return True
+    else:
+        return False
+sana = 0
+for i in range(5):
+    k = int(input("k= "))
+    r = isPower(k)
+    if r:
+        sana += 1
+print(sana)
 
 
 #  27-misol.
@@ -321,18 +361,65 @@ def DigitCount(K):
     return f"{s} ta"
 print(DigitCount(58))
 
-#  30-misol.
-print("\n~~~~~~~      30-misol.       ~~~~~~~~~~~~~~~~~~~")
+
+#  30-misol.  1                             N raqami K sonini ichidaligini tekshirish
+print("\n~~~~~~~      30-misol.  1     ~~~~~~~~~~~~~~~~~~~")
 def DigitN(K, N):
-    if N in K:
+    if str(N) in K:
         return f"{K} ni ichida {N} mavjud."
     else:
         return "mavjud emas"
 
+print(DigitN(str(6548), 7))
+
+
+#  30-misol.  2                       K sonini N- tartibidagi raqam. chapdan o'ngga qarab
+print("\n~~~~~~~      30-misol.  2     ~~~~~~~~~~~~~~~~~~~")
+def Innum(K, N):
+    k = K
+
+    #============   xonalar sonini aniqlab olamiz     ==================
+    xonasi = 1              # sonning xonalarin xisoblaydi
+    while K > 9:
+        K = K//10
+        xonasi += 1
+    print(xonasi, "xanalik son \n")        # necha xonali ekanini chiqaradi
+
+    #============    natija chiqaramiz     ==================
+    son = 0
+    for i in range(1, xonasi+1):
+        son = k // (10**(xonasi-i))
+        k %= 10**(xonasi-i)
+        if i == N:
+            return f"{N}- tartibdagi son= {son}"
+
+print(Innum(45678932, 6))
+
+
+#  30-misol.  3                       K sonini N- tartibidagi raqam. chapdan o'ngga qarab. optimali
+print("\n~~~~~~~      30-misol.  3     ~~~~~~~~~~~~~~~~~~~")
+def digitN(k, n):
+    if k < 10**(n-1):
+        return -1
+    while k > 10**n:
+        k //= 10
+    return k%10
+print(digitN(1535416431, 6))
+
+
+
 #  31-misol.                                                            ???????????????????????????????????
 print("\n~~~~~~~      31-misol.       ~~~~~~~~~~~~~~~~~~~")
 def IsPolindrom(N):
-    pass
+    d = N;  s = 0               # N ni d ga saqlab quyamiz
+    while N > 0:
+        q = N % 10
+        N //= 10
+        s = s*10 + q
+    if d == s:         return "Polindrom"
+    else:              return "Polindrom emas"
+
+print(IsPolindrom(54645))
 
 
 #  32-misol.                                        gradusni radianga aylantirish
@@ -418,33 +505,64 @@ def Exp1(x, e):
 print(Exp1(2, 5))
 
 
-#  41-misol.
+#  41-misol.                                                            ?????????????????????????????????????
 print("\n~~~~~~~      41-misol.       ~~~~~~~~~~~~~~~~~~~")
 
 
-#  42-misol.
+#  42-misol.                                                            ?????????????????????????????????????
 print("\n~~~~~~~      42-misol.       ~~~~~~~~~~~~~~~~~~~")
 
 
-#  43-misol.
+#  43-misol.                                                            ?????????????????????????????????????
 print("\n~~~~~~~      43-misol.       ~~~~~~~~~~~~~~~~~~~")
 
 
-#  44-misol.
+#  44-misol.                                                            ?????????????????????????????????????
 print("\n~~~~~~~      44-misol.       ~~~~~~~~~~~~~~~~~~~")
 
 
-#  45-misol.
+#  45-misol.                                                            !!!!!!!!!!!!?????????????????????????
 print("\n~~~~~~~      45-misol.       ~~~~~~~~~~~~~~~~~~~")
+def Power4(x, e, a):
+    s = 1
+    f = 1
+    for i in range(1, e+1):
+        s += ((a - i + 1)*(x**(i)))/f
+
+    return s
+print(Power4(0.2, 3, 3))
+
 
 
 #  46-misol.                                    =================       E K U B         =========================
 print("\n~~~~~~~      46-misol.   E K U B     ~~~~~~~~~~~~~~~~~~~")
 def Ekub(A, B):
-    pass
+    while A > 0 and B > 0 and A != B:
+        if A > B:                          # kichigini qoldiqqa olib, qoldiqli bulish usulida ishlanadi
+            A %= B
+        else:
+            B %= A
+        if A == 0:      A = b           # nol raqam chiqarmaslik uchun raqamlarni almashtirib olamiz
+        if B == 0:      B = A           # buni o'rniga >>> return a+b  <<< qilsak nol raqamdan boshqasi chiqadi. nol chiqmaydi.
+        return f"Ekub: {B}"
+print(Ekub(15,45))
 
-#  47-misol.
+
+#  47-misol.                                          Qisqarmas kasr   ( 5/3, 7/4, 15/4 )
 print("\n~~~~~~~      47-misol.       ~~~~~~~~~~~~~~~~~~~")
+def Frac1(a, b):
+    k, l = a, b
+    while a != b:
+        if a > b:
+            a %= b
+        else:
+            b %= a
+        if a == 0:
+            a = b
+        if b == 0:
+            b = a
+    return f"{int(k/a)}/{int(l/b)}"
+print(Frac1(5, 9))
 
 
 #  48-misol.
@@ -455,36 +573,123 @@ print("\n~~~~~~~      48-misol.       ~~~~~~~~~~~~~~~~~~~")
 print("\n~~~~~~~      49-misol.       ~~~~~~~~~~~~~~~~~~~")
 
 
-#  50-misol.
+#  50-misol.                                sekundni soatga ugirish
 print("\n~~~~~~~      50-misol.       ~~~~~~~~~~~~~~~~~~~")
+def TimeToHMS(T):
+    H = T//3600%24   # H = T//3600          # soat
+    M = T//60%60     # M = T%3600//60       # Minut
+    S = T%60         # S = T%60             # Sekund
 
+    return f"{H} : {M} : {S}"
+print(TimeToHMS(5821))
 
-#  51-misol.
+#  51-misol.                        kiritilgan soatga  T sekund oshirish
 print("\n~~~~~~~      51-misol.       ~~~~~~~~~~~~~~~~~~~")
+def IncTime(T, H, M, S):
+    h = T//3600%24 + H             # soat
+    m = T//60%60 + M               # Minut
+    s = T%60 + S                   # Sekund
+
+    return f"{h} : {m} : {s}"
+print(IncTime(3722, 1, 20, 22))
 
 
-#  52-misol.
+#  52-misol.                                                    Kabisa yilini topish
 print("\n~~~~~~~      52-misol.       ~~~~~~~~~~~~~~~~~~~")
+def IsLeapYear(Y):
+    if Y%100 == 0 and Y%400 !=0:
+        return ("kabsa emas")
+    elif Y%4 == 0:
+        return ("kabisa")
+    else:
+        return "Kabisa emas"
+print(IsLeapYear(2001))
 
 
-#  53-misol.
-print("\n~~~~~~~      53-misol.       ~~~~~~~~~~~~~~~~~~~")
-
-
-#  54-misol.
+#  54-misol.                                        1 kun oldingi sanani aniqlash
 print("\n~~~~~~~      54-misol.       ~~~~~~~~~~~~~~~~~~~")
+def PrevDate(D, M, Y):
+    D = D - 1
+    if (M == 1 or M == 2 or M == 4 or M == 6 or M == 8 or M == 9 or M == 11):
+        if D == 0:
+            D, M = 31, M - 1
+            if M == 0:
+                M = 12
+                Y = Y - 1
+
+    if D == 0 and (M == 5 or M == 7 or M == 10 or M == 12):
+        D, M = 30, M - 1
+
+    if Y % 100 == 0 and Y % 400 != 0 and M == 3 and D == 0:
+        D = 28
+        M -= 1
+    elif Y%4 == 0 and M == 3 and D == 0:
+        M = M - 1
+        D = 29
+
+    return f"{D}:{M}:{Y}"
+
+print(PrevDate(1, 2, 2020))
 
 
-#  55-misol.
+#  55-misol.                                    1 kun keyingi kunni aniqlash
 print("\n~~~~~~~      55-misol.       ~~~~~~~~~~~~~~~~~~~")
+#    kabisa yili yoki kabisa emasligini aniqlash
+def IsLeapYear(Y):
+    if Y%100 == 0 and Y%400 ==0:
+        return False   #("kabsa emas")
+    elif Y%4 == 0:
+        return True    #("kabisa")
+    else:
+        return False   #"Kabisa emas"
+print(IsLeapYear(2001))
+
+#                    bir kun keyingi kunni aniqlash
+def NextDate(D, M, Y):
+    D = D + 1
+    if (M == 1 or M == 3 or M == 5 or M == 7 or M == 8 or M == 10 or M == 12):
+        if D == 32:
+            D, M = 1, M + 1
+            if M == 13:
+                M = 1
+                Y = Y + 1
+
+    if D == 31 and (M == 4 or M == 6 or M == 9 or M == 11):
+        D, M = 1, M + 1
+
+    if IsLeapYear(Y) == False and M == 2:
+        D = 1
+        M += 1
+    elif IsLeapYear(Y) == True and M == 2:
+        M = M + 1
+        D = 1
+
+    return f"{D}:{M}:{Y}"
+
+print(NextDate(31, 12, 2020))
+print(NextDate(28, 2, 2004))
+print(NextDate(28, 2, 2400))
+print(NextDate(29, 2, 2020))
+print(NextDate(5, 10, 1993))
+print(NextDate(30, 4, 2020))
 
 
-#  56-misol.
+
+
+
+
+#  56-misol.                                            Nuqtalar orasidagi masofa
 print("\n~~~~~~~      56-misol.       ~~~~~~~~~~~~~~~~~~~")
+def Leng(x1, y1, x2, y2):
+    return abs(x1-x2), abs(y1-y2)
+print(Leng(2,5,3,8))
 
-
-#  57-misol.
+#  57-misol.                                                                            ????
 print("\n~~~~~~~      57-misol.       ~~~~~~~~~~~~~~~~~~~")
+def Perim(xA, yA, xB, yB, xC, yC):
+    Peremetr = abs(xA-xB) + abs(xB-xC) + abs(xC-xA)
+    return Peremetr
+print(Perim(2,3,5,6,4,8))
 
 
 #  58-misol.
@@ -499,13 +704,47 @@ print("\n~~~~~~~      59-misol.       ~~~~~~~~~~~~~~~~~~~")
 print("\n~~~~~~~      60-misol.       ~~~~~~~~~~~~~~~~~~~")
 
 
-#  -misol.
-print("\n~~~~~~~      -misol.       ~~~~~~~~~~~~~~~~~~~")
 
 
-#  -misol.
-print("\n~~~~~~~      -misol.       ~~~~~~~~~~~~~~~~~~~")
 
+#########################################################################################################################
+#########################################################################################################################
+#########################################################################################################################
+
+
+print(" N ta sonni EKUB ini topish")
+def EKUB(a, b):
+    while a != 0 and b != 0:
+        if a>b:
+            a %= b
+        else:
+            b %= a
+    return a+b
+
+n = int(input("sikl soni: "))
+a = int(input("a= "))
+for i in range(2, n+1):
+    b = int(input("b= "))
+    a = EKUB(a, b)
+print(a)
+
+#########################################################################
+print(" N ta sonni EKUK ini topish")
+def EKUK(a, b):
+    k = i = max(a, b)
+    s = 0
+    while True:
+        if i % a == 0 and i % b == 0:
+            break
+        i += k
+    return i
+
+n = int(input("sikl soni: "))
+a = int(input("a= "))
+for i in range(2, n+1):
+    b = int(input("b= "))
+    a = EKUK(a, b)
+print(a)
 
 
 
