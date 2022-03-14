@@ -598,38 +598,50 @@ print(IncTime(3722, 1, 20, 22))
 print("\n~~~~~~~      52-misol.       ~~~~~~~~~~~~~~~~~~~")
 def IsLeapYear(Y):
     if Y%100 == 0 and Y%400 !=0:
-        return ("kabsa emas")
+        return False             # ("kabsa emas")
     elif Y%4 == 0:
-        return ("kabisa")
+        return True              #("kabisa")
     else:
-        return "Kabisa emas"
+        return False             # ("Kabisa emas")
 print(IsLeapYear(2001))
 
+#  53-misol.                                                    sana oy yilni chiqarish
+print("\n~~~~~~~      53-misol.       ~~~~~~~~~~~~~~~~~~~")
+def MonthDays(M, Y):
+    if M == 2:
+        return 28 + IsLeapYear(Y)
+    elif M == 4 or M == 6 or M == 9 or M == 11:
+        return 30
+    elif M == 1 or M == 3 or M == 5 or M == 7 or M == 8 or M == 10 or M == 12:
+        return 31
+    else:
+        return "bunday oy yuq"
 
-#  54-misol.                                        1 kun oldingi sanani aniqlash
+print(MonthDays(3, 2400))
+
+
+#  54-misol.                                        1 kun oldingi sanani aniqlash.  52-53-misollardan foydalanib
 print("\n~~~~~~~      54-misol.       ~~~~~~~~~~~~~~~~~~~")
 def PrevDate(D, M, Y):
-    D = D - 1
-    if (M == 1 or M == 2 or M == 4 or M == 6 or M == 8 or M == 9 or M == 11):
-        if D == 0:
-            D, M = 31, M - 1
-            if M == 0:
-                M = 12
-                Y = Y - 1
+    D = D + 1
+    if MonthDays(M, Y) == 28 and D == 29:
+        D = 1;   M = M + 1
+    elif MonthDays(M, Y) == 29 and D == 30:
+        D = 1;   M = M + 1
+    elif MonthDays(M, Y) == 30 and D == 31:
+        D = 1;   M = M + 1
+    elif MonthDays(M, Y) == 31 and D > 31:
+        D = 1;      M = M + 1
+        if M >12 and D == 1:
+            M = 1;  Y = Y + IsLeapYear(Y)
+    elif M > 12 or (M==2 and D > 29):
+        return "sanani tekshiring!"
+    return (Y, M, D)
 
-    if D == 0 and (M == 5 or M == 7 or M == 10 or M == 12):
-        D, M = 30, M - 1
+print("2", PrevDate(27, 2, 2400))
+print("3", PrevDate(28, 2, 2400))
+print("4", PrevDate(29, 2, 2400))
 
-    if Y % 100 == 0 and Y % 400 != 0 and M == 3 and D == 0:
-        D = 28
-        M -= 1
-    elif Y%4 == 0 and M == 3 and D == 0:
-        M = M - 1
-        D = 29
-
-    return f"{D}:{M}:{Y}"
-
-print(PrevDate(1, 2, 2020))
 
 
 #  55-misol.                                    1 kun keyingi kunni aniqlash
@@ -680,30 +692,39 @@ print(NextDate(30, 4, 2020))
 
 #  56-misol.                                            Nuqtalar orasidagi masofa
 print("\n~~~~~~~      56-misol.       ~~~~~~~~~~~~~~~~~~~")
-def Leng(x1, y1, x2, y2):
-    return abs(x1-x2), abs(y1-y2)
-print(Leng(2,5,3,8))
 
-#  57-misol.                                                                            ????
+x1,y1 = 5, 4
+x2,y2 = 8, 5
+x3,y3 = 9, 3
+
+def Leng(x1, y1, x2, y2):
+    return ((x1-x2)**2 + (y1-y2)**2)**0.5
+
+#  57-misol.                                                              Uchburchak Peremetr
 print("\n~~~~~~~      57-misol.       ~~~~~~~~~~~~~~~~~~~")
 def Perim(xA, yA, xB, yB, xC, yC):
-    Peremetr = abs(xA-xB) + abs(xB-xC) + abs(xC-xA)
+    Peremetr = Leng(xA, yA, xB, yB) + Leng(xB, yB, xC, yC) + Leng(xA, yA, xC, yC)
     return Peremetr
-print(Perim(2,3,5,6,4,8))
 
-
-#  58-misol.
+#  58-misol.                                                               Uchburchak yuzasi
 print("\n~~~~~~~      58-misol.       ~~~~~~~~~~~~~~~~~~~")
-
+def Area(x1,y1,x2,y2,x3,y3):
+    a, b, c = Leng(x1, y1, x2,y2), Leng(x2, y2, x3,y3), Leng(x1, y1, x3,y3)
+    P = a + b + c
+    p = Perim(x1,y1, x2,y2, x3,y3)
+    return (P*(P-a)*(P-b)*(P-c))**0.5,  (p*(p-a)*(p-b)*(p-c))**0.5
 
 #  59-misol.
 print("\n~~~~~~~      59-misol.       ~~~~~~~~~~~~~~~~~~~")
-
+def Dist(x1,y1,x2,y2,x3,y3):
+    print(2*Area(x1,y1,x2,y2,x3,y3)/Leng(x1,y1, x2,y2))
+    print(2*Area(x1,y1,x2,y2,x3,y3)/Leng(x1,y1, x3,y3))
+    return (2*Area(x1,y1,x2,y2,x3,y3)/Leng(x2,y2, x3,y3))
 
 #  60-misol.
 print("\n~~~~~~~      60-misol.       ~~~~~~~~~~~~~~~~~~~")
-
-
+def Hieght(x1,y1,x2,y2,x3,y3):
+    return Dist(x1,y1,x2,y2,x3,y3)
 
 
 
@@ -727,6 +748,25 @@ for i in range(2, n+1):
     b = int(input("b= "))
     a = EKUB(a, b)
 print(a)
+
+
+#########################################################################
+print(" N ta sonni EKUK ini topish")                    #  EKUB dan foydalanib
+def EKUB(a, b):
+    while a != 0 and b != 0:
+        if a>b:
+            a %= b
+        else:
+            b %= a
+    return a+b
+
+n = int(input("sikl soni: "))
+a = int(input("a= "))
+for i in range(2, n+1):
+    b = int(input("b= "))
+    a = EKUB(a, b)
+print(a)
+
 
 #########################################################################
 print(" N ta sonni EKUK ini topish")
