@@ -5,7 +5,7 @@ for i in range(m):
     a.add(i)
     for j in range(n):
         a.add(j)
-print(a)
+
 
 
 #  -misol.
