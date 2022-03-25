@@ -38,16 +38,24 @@ b = [2**i for i in range(n+1)]
 print("B=  ", b)
 
 
-#    3-misol.                                                   #  ??????????????????????????????????????????
-n = 4
-A = 4; D = 2
-for i in range(1, n+1):
-    M = []
-    A = A-i + D
-    M.append(A)
-    print(M)
+#    3-misol.                                                   Arifmetik progressiya N-hadigacha sonlar
+A = 3;  D = 4
+N = 5
+a = []
+for i in range(1, N+1):
+    a.append(A)
+    A += D
+print(a)
 
-#    4-misol.                                                       #???????????????????????????????????????????????
+
+#    4-misol.                                                       geometrik funksiya hadi
+A = 3;  D = 2
+N = 5
+a = []
+for i in range(1, N+1):
+    a.append(A)
+    A *= D
+print(a)
 
 
 #    5-misol.                                   n ta hadli  FIBONACHCHI  sonlari
@@ -59,13 +67,14 @@ def Fibonachi(n):
 print(Fibonachi(8))
 
 
-#    6-misol.                   o'zidan oldingi sonlar yig'indisini chiqarish                  ????????????????????????
-n = 7
-S= 0
-M = [2, 5]          # A=2, B=5
-for i in range(0, n+1):
-    M.append(sum(M))
-print(M)
+#    6-misol.                   o'zidan oldingi sonlar yig'indisini chiqarish
+A = 2; B = 3
+n = 5
+a = [A, B]
+for i in range(n):
+    a += [sum(a)]
+print(a)
+
 
 
 #    7-misol.                       # elementlrni teskari chiqarish
@@ -131,8 +140,13 @@ for i in range(0, n+1, 2):
 print(b)
 
 
-#    13-misol.                                                      ?????????????????????????????
-
+#    13-misol.
+a = [2,3,4,5,6,9,10,12,17, 14, 13,8, 15,19, 21, 22]
+b = []
+n = 11
+for i in range(1, n+1, 2):
+    b.append(a[i])
+print(b)
 
 
 
@@ -235,20 +249,38 @@ print(Summa(2, 5))      # 52, 4, 22, 6 = 84
 
 #    22-misol.                                      # K va L elementlaridan tashqari sonlarni yig'indisi
 a = [10, 15, 52,4,22,6,9,10,12,17, 14, 13,8, 15]
-k = 3;  L = 11
+K = 3;  L = 11
 print((sum(a[:K] + sum(a[L+1:]))))
 
 
-#    23-misol.                                       ??????????????????????????????????????????????????????????????????????????????????
-
+#    23-misol.
+a = [10, 15, 52,4,22,6,9,10,12,17, 14, 13,8, 15]
+K = 3;  L = 11
+print( (sum(a[:K]) + sum(a[L+1:])) / (len(a[:K] + len(a[L+1:]))))
 
 
 #    24-misol.                                      Arifmetik progressiya bulsa, ayirmasi, aks holda nolni chiqaruvchi
+A = 3;  D = 2
+N = 5
+a = [3, 5, 7, 9, 11]
+for i in range(1, N):
+    if a[i] - a[i-1] == D:
+        print("D=", D)
+    else:
+        print(0)
+        break
 
 
-
-#    25-misol.
-
+#    25-misol.                                  Geometrik progressiya bulsa, maxraji, aks holda nolni chiqaruvchi
+A = 3;  D = 2
+N = 5
+a = [3, 5, 7, 9, 11]
+for i in range(1, N):
+    if int(a[i]/a[i-1]) == D:
+        print("D=", D)
+    else:
+        print(0)
+        break
 
 #    26-misol.                      ketma ket juft yoki toq son kelsa dasturni tuxtatish
 a = [2, 5, 4, 3, 8, 7, 4, 5, 2, 1, 4, 7, 8, 9, 6]
@@ -386,7 +418,7 @@ for i in range(len(a)):
 
 
 #    39-misol.                                                          ???????????????????????????
-
+print('39-misol')
 
 #    40-misol.         uzun yul bn chiqadi                     ??????????
 
@@ -401,9 +433,8 @@ for i in range(len(a)-1):
 print(max)
 
 
-#    44-misol.                                  # bir xil sonli element indexini chiqarish                         ?????
+#    44-misol.                                  # bir xil sonli element indexini chiqarish
 a = [6, 7, 7, 10, 11, 29, 32, 6, 11, 16, 7, 10, 9, 11]
-
 k = 0
 for i in range(len(a)):
     k = a.count(a[i])
@@ -424,7 +455,7 @@ print(tartib)
 
 
 #    46-misol.
-
+a = [6, 17, 10, 12, 29, 32, 6, 8, 16, 27, 19, 9, 11]
 
 
 #    47-misol.                                              bir xil sonlarni chiqaruvchi
@@ -566,9 +597,13 @@ b = [sum(a[n-i-1:k:-1]) for i in range(n)]
 print(b)
 
 
-#    64-misol.                                                           ???????????????????????????????
+#    64-misol.
+a = [1,2,3,4]
+b = [5,6,7,8]
+c = [9,10,11]
 
-
+d = a + b + c
+print(d)
 
 #    65-misol.
 a = [6, 7, 10,21,14,8,4,36, 2, 17, 5]
@@ -652,11 +687,16 @@ k = 3; h = 6
 a = a[:k+1] +a[h-1: k:-1] + a[h:]
 
 
-#    73-misol.
+#    73-misol.                                          k va h sonlarini orasidagilarni almashtirish
+a = [0,1,2,3,4,5,6,7,8,9,10,11]
+print(a)
+k = 4; h = 9
+a = a[:k] + a[h - len(a) -1 : k : -1 ] + a[h:]
+print(a)
 
 
 
-#    74-misol.                                      eng katta va eng kichik lelmentlari orasidagilar 0 ga aylantirlsin          ????????????????
+#    74-misol.                                      eng katta va eng kichik elementlari orasidagilar 0 ga aylantirlsin
 n = 10  #int(input("n= "))
 a = [random.randint(-10, n) for i in range(n)]
 print("a:  ", a)
@@ -740,17 +780,390 @@ n = 10  #int(input("n= "))
 a = [random.randint(0, n) for i in range(n)]
 print("a:  ", a)
 
-for i in range(len(a)-1, -1, -1):
-    a[i] = a[i-1]
-else:
-    a.remove(a[i])
+b = a[1:] + a[:1]
+print(b)
+
+
+#    81-misol.                                          k ta o'ngga surish
+n = 10  #int(input("n= "))
+a = [random.randint(0, n) for i in range(n)]
+print("a:  ", a)
+
+k = 6
+b = a[k:] + a[:k]
+print(b)
+
+
+
+#    83-misol.
+n = 10  #int(input("n= "))
+a = [random.randint(0, n) for i in range(n)]
+print("a:  ", a)
+
+b = a[-1:-2:-1] + a[:len(a)-1]
+print("    ", b)
+
+
+#    84-misol.
+n = 10  #int(input("n= "))
+a = [random.randint(0, n) for i in range(n)]
+print("a:  ", a)
+
+b = a[1:len(a)] + a[0:1]
+print("    ", b)
+
+
+
+#    85-misol.
+n = 10  #int(input("n= "))
+a = [random.randint(0, n) for i in range(n)]
+print("a:  ", a)
+
+k = 6
+b = a[len(a) -k:] + a[:len(a) - k]      # b = a[k:] + a[:k]
+print("    ", b)
+
+
+
+#    89-misol.                              # sortlash algoritmi
+n = 10  #int(input("n= "))
+a = [i for i in range(n)]
+a[random.randint(0, n)] = int(input("a= "))
+print(a)
+
+for i in range(len(a) - 1):
+    if a[i] > a[i + 1]:
+        t = a[i+1]
+        a.pop(i+1)
+        break
+for i in range(len(a)-1):
+    if t > a[i]:
+        pass
+    else:
+        a.insert(i, t)
+        break
+print(a)
+
+
+
+#    90-misol.
+a = [5,4,8,9,3,21,5,4,8,7,9,3]
+k = 6
+a.pop(3)
 print("    ", a)
 
 
+#    91-misol.
+k = 3;  m = 6
+for i in range(k, m+1):
+    a.pop(k)
+print("    ", a)
+
+#    92-misol.                                      toq sonlarni uchirish
+#a = [a.remove(i) for i in a if i%2 == 0]
+a = [5,4,8,9,3,21,5,4,8,7,9,3]
+print(a)
+
+while i < len(a):
+    if a[i]%2 == 1:
+        a.pop(i)
+        i -= 1
+    i += 1
+print(a)
+
+
+#    93-misol.                                      juftlarni uchirish
+a = [3,15,8,4,89,6,3,1,5,45,6,3]
+print(a)
+
+while i < len(a):
+    if a[i]%2 == 0:
+        a.pop(i)
+        i -= 1
+    i += 1
+print(a)
+
+
+#    94-misol.                                  toq indexlilarni uchirish
+n = 10  #int(input("n= "))
+a = [random.randint(0, n) for i in range(n)]
+print("a:  ", a)
+
+n = 10  # int(input("n= "))
+a = [random.randint(0, n) for i in range(n)]
+print("a:  ", a)
+i = 0
+while i < len(a):
+    if i % 2 == 0:
+        a.pop(i)
+    i += 1
+
+print(a)
+
+
+#    95-misol.
+
+
+#    96-misol.                                  bir xil sonlarni uchirish
+a = [5,4,8,9,3,21,5,4,8,5,7,9,4]
+
+i = 0
+while i < len(a):
+    t = a.count(a[i])
+
+    if t >= 2:
+        while t > 1:
+            a.remove(a[i])
+            t -= 1
+    i += 1
+    print(i-1)
+print(a)
+
+
+#    97-misol.
+
+
+#    -misol.
+
+
+#    -misol.
+
+
+#    -misol.
+
+
+#    -misol.
+
+
+#    -misol.
+
+
+#    -misol.
+
+
+#    -misol.
+
+
+#    105-misol.
+a = [5,4,8,9,3,21,5,4,8,5,7,9,4]
+k = 21; m = 3
+print(*a)
+
+for i in range(m):
+    a,insert(k+1, 0)
+# a = a[:k+1] + [0]*n + a[k+1:]
+print(a)
+
+
+#    109-misol.                                                 manfiy sonlardan keyin 0 sonini chiqaradi
+n = 10  # int(input("n= "))
+a = [random.randint(0, n) for i in range(n)]
+print("a:  ", a)
+
+i = 0
+while i < len(a):
+    if a[i] < 0:
+        a.insert(i+1, 0)
+    i += 1
+
+print(a)
 
 
 
 
+#    112-misol.                                              sortlash algoritmi
+#a = [3,5,-5,-1,6,4,-7,7,6,-1,6,7,2,2]
+b = []
+
+while a:
+    min = a[0]
+    for i in range(len(a)):
+        if min > a[i]:
+            min = a[i]
+    b.append(min)
+    a.remove(min)
+print("sortlash 1-usul.", b)
+
+
+for i in range(len(a)):
+    for j in range(len(a) - 1 -i):
+        if a[j] > a[j+1]:
+            a[j], a[j+1] = a[j+1], a[j]
+print("sortlash 2-usul.")
+
+
+for i in range(len(a)-1):
+    for j in range(i, len(a)):
+        if a[i] > a[j]:
+            a[i], a[j] = a[j], a[i]
+print("sortlash 3-usul.")
+
+
+
+
+#    -misol.
+
+
+#    -misol.
+
+
+#    -misol.
+
+
+#    116-misol.                                     ketma ket kelgan sonlarni nechtaligini c massivga yuklash
+a = [3,5,5,5,6,4,7,7,6,6,7,2,2]
+b = []; c = []
+s = 1
+for i in range(1, len(a)):
+    if a[i-1] == a[i]:
+        s += 1
+    else:
+        b.append(a[i-1])
+        c.append(s)
+        s = 1
+b.append(a[len(a)-1])
+c.append(s)
+print(b, c)
+
+
+
+#    117-misol.
+a = [3,5,5,5,6,4,7,7,6,6,7,2,2]
+b = []; c = []
+s = 1; k = 5
+for i in range(1, len(a)):
+    if a[i-1] == a[i]:
+        s += 1
+    else:
+        b.append(a[i-1])
+        c.append(s)
+        s = 1
+b.append(a[len(a)-1])
+c.append(s)
+
+a = []
+for i in range(len(b)):
+    if k == i+1:
+        c[i] *= 2
+    for j in range(c[i]):
+        a.append(b[i])
+print(a)
+
+
+
+
+#    122-misol.
+k = 4
+print(a)
+
+b = []; c = []
+s = 1
+
+for i in range(1, len(a)):
+    if a[i-1] == a[i]:
+        s += 1
+    else:
+        b.append(a[i-1])
+        c.append(s)
+        s = 1
+b.append(a[len(a) - 1])
+c.append(s)
+print(b)
+print(s)
+
+a = []
+for i in range(len(b)):
+    if k == i+1:
+        continue
+    for j in range(c[i]):
+        a.append(b[i])
+print(a)
+
+
+
+#    124-misol.
+
+k = 7
+print(a)
+
+b = []; c = []
+s = 1
+
+for i in range(1, len(a)):
+    if a[i-1] == a[i]:
+        s += 1
+    else:
+        b.append(a[i-1])
+        c.append(s)
+        s = 1
+b.append(a[len(a) - 1])
+c.append(s)
+print(b)
+print(s)
+
+if not k > len(b):
+    b[k], b[-1] = b[-1], b[k-1]
+    c[k], c[-1] = c[-1], c[k-1]
+
+a = []
+for i in range(len(b)):
+    for j in range(c[i]):
+        a.append(b[i])
+print(a)
+
+
+
+#    127-misol.
+
+k = 7
+print(a)
+
+b = []; c = []
+s = 1
+
+for i in range(1, len(a)):
+    if a[i-1] == a[i]:
+        s += 1
+    else:
+        b.append(a[i-1])
+        c.append(s)
+        s = 1
+b.append(a[len(a) - 1])
+c.append(s)
+print(b)
+print(s)
+
+if not k > len(b):
+    b[k], b[-1] = b[-1], b[k-1]
+    c[k], c[-1] = c[-1], c[k-1]
+
+a = []
+for i in range(len(b)):
+    for j in range(c[i]):
+        if c[i] > k:
+            a.append(b[i])
+            break
+print(a)
+
+
+#    129-misol.
+
+def uzunlik(a,b,c,d):
+    return ((a-c)**2 + (b-d)**2)**0.5
+
+x = [3,5,-5,-1,6,4,-7,7,6,-1,6,7,2,2]
+y = [3,5,-5,-1,6,4,7,-1,7,2]
+print(x)
+print(y)
+
+c = []
+for i in range(len(a)):
+    s = 0
+    for j in range(len(a)):
+        s += uzunlik(x[i],y[i], x[j],y[j])
+    c.append(s)
+a = c.index(min(c))
+print(a)
 
 
 
@@ -770,3 +1183,21 @@ n = 4 #int(input("n= "))
 for i in range(1, n-1):
     f.append(f[i-1] + f[i])
 print(*f)                       #     * belgisi qavs va vergullarni olib beradi
+
+
+########                                D o' s t    sonlar
+#from random import randrange
+a = [randrange(2, 10000, 2) for i in range(100)]
+b = [randrange(2, 10000, 2) for i in range(100)]
+c = []
+
+for i in a:
+    S = 0
+    for j in range(1, i//2 + 1):
+        if i%j == 0:
+            S += j
+    if S in b:
+        c.append(i)
+        c.append(S)
+print(c)
+

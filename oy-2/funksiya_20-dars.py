@@ -489,7 +489,7 @@ def Power2(A, N):
 
 #  39-misol.                                                        ?????????????????????????
 print("\n~~~~~~~      39-misol.       ~~~~~~~~~~~~~~~~~~~")
-def Poer3(A, N):
+def Power3(A, N):
     pass
 
 
@@ -582,6 +582,7 @@ def TimeToHMS(T):
 
     return f"{H} : {M} : {S}"
 print(TimeToHMS(5821))
+
 
 #  51-misol.                        kiritilgan soatga  T sekund oshirish
 print("\n~~~~~~~      51-misol.       ~~~~~~~~~~~~~~~~~~~")
