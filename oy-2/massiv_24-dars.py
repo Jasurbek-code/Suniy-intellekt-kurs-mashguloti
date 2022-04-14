@@ -1167,6 +1167,20 @@ print(a)
 
 
 
+#    140-misol.
+x = [64,5,6,33,1,4,7,8,3]
+y = [1,2,5,8,4,6,3,4,4,8]
+print(x)
+print(y)
+
+for i in range(len(a)):
+    for j in range(i, len(a)):
+        if x[j]+y[j] < x[i]+y[i] or x[j]+y[j] == x[i]+y[i] and x[j]<x[i]:
+            x[j], x[i], y[j], y[i] = x[i], x[j], y[i], y[j]
+    print(x)
+    print(y)
+
+
 
 
 
