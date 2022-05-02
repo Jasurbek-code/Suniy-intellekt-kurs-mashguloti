@@ -1,3 +1,5 @@
 
 
 
+print("salom")
+print("qale")
