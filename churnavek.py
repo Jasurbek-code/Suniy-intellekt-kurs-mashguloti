@@ -2,4 +2,3 @@
 
 
 print("salom")
-print("bbbbbb")
