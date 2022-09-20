@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/Telegram Desktop/3.pyqt/3.pyqt/.idea/3.pyqt.iml" filepath="$USER_HOME$/Downloads/Telegram Desktop/3.pyqt/3.pyqt/.idea/3.pyqt.iml" />
       <module fileurl="file://$PROJECT_DIR$/../BoTlar/.idea/BoTlar.iml" filepath="$PROJECT_DIR$/../BoTlar/.idea/BoTlar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Magistr/.idea/Magistr.iml" filepath="$PROJECT_DIR$/../Magistr/.idea/Magistr.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oy-1.iml" filepath="$PROJECT_DIR$/.idea/oy-1.iml" />
     </modules>
   </component>
